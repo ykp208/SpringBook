@@ -5,14 +5,15 @@
 <typeAliases>
 	<!-- <typeAlias type="com.guestbook.domain.GuestDTO" alias="gdto"/>
 	<typeAlias type="com.guestbook.domain.BoardDTO" alias="bdto"/>
-	<typeAlias type="com.guestbook.domain.MemberDTO" alias="mdto"/>
-	<typeAlias type="com.guestbook.domain.PriceDTO" alias="pdto"/> -->
+	<typeAlias type="com.guestbook.domain.MemberDTO" alias="mdto"/> 
+	<typeAlias type="org.zero.model.dto.BoardVO" alias="bvo"/>-->
+	<package name="org.zero.model.dto"/>
 </typeAliases>
 
 
 <mappers>
-<!-- <mapper resource="mappers/GuestAccount.xml"/>
-<mapper resource="mappers/ProductAccount.xml"/> -->
+<!-- <mapper resource="mappers/GuestAccount.xml"/>-->
+<mapper resource="mappers/ZeroAccount.xml"/> 
 </mappers>
 
 </configuration>

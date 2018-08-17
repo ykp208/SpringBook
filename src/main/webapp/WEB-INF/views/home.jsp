@@ -8,6 +8,7 @@
 <head>
 	<title>Home</title>
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
 <script>
 $(document).ready(function(){
 	$("#btn").click(function(){
@@ -38,7 +39,7 @@ $(document).ready(function(){
 
 </script>
 	
-	
+<%@include file="./include/header.jsp" %> 
 	
 </head>
 <body>
@@ -47,16 +48,17 @@ $(document).ready(function(){
 </h1>
 
 <P>  The time on the server is ${serverTime}. </P>
-<button id="btn">클릭</button>
+<button id="btn">클릭</button><p>
 
 
-<a href="/zero/sample/hello">hello</a>
-<a href="/zero/sample/sendVO">sendVO</a>
-<a href="/zero/sample/sendList">sendList</a>
-<a href="/zero/sample/sendMap">sendMap</a>
-<a href="/zero/sample/sendErrorAuth">sendErrorAuth</a>
-<a href="/zero/sample/sendErrorNot">sendErrorNot</a>
+<a href="/zero/sample/hello">hello</a><p>
+<a href="/zero/sample/sendVO">sendVO</a><p>
+<a href="/zero/sample/sendList">sendList</a><p>
+<a href="/zero/sample/sendMap">sendMap</a><p>
+<a href="/zero/sample/sendErrorAuth">sendErrorAuth</a><p>
+<a href="/zero/sample/sendErrorNot">sendErrorNot</a><p>
 
-<jsp:include page="./include/footer.jsp"></jsp:include>
+<%@include file="./include/footer.jsp" %> 
+
 </body>
 </html>
